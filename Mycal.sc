@@ -1,7 +1,3 @@
-import exercise2.Exercise2.*
-import exercise3.Exercise3.*
-import java.time.LocalDate
-
 object Main{
   def main(args: Array[String]): Unit = {
     val multiplyBy: Double => Double => Double = (fac: Double) => (n: Double) => n * fac
