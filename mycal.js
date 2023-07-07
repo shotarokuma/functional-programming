@@ -10,8 +10,7 @@ const compose = (func1, func2) => {
     return func2(func1(n));
   }
 }
-
-const myCal = compose(square, multiplyBy);
+const myCal = n => multiplyBy(square(n))
 
 const fac = 0.1;
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];

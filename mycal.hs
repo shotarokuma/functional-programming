@@ -4,11 +4,8 @@ multiplyBy fac n = n * fac
 square :: Double -> Double
 square n = n * n
 
-compose :: (Double -> Double) -> (Double -> Double) -> (Double -> Double)
-compose func1 func2 = \n -> func2 (func1 n)
-
 myCal :: Double -> Double -> Double
-myCal = compose square . multiplyBy
+myCal = multiplyBy . square
 
 fac :: Double
 fac = 0.1
